@@ -2,6 +2,10 @@
 # Simple setup.sh for configuring Ubuntu 12.04 LTS EC2 instance
 # for headless setup. 
 
+# git identity
+git config --global user.name "Yu Shen"
+git config --global user.email yubrshen@gmail.com
+
 # Install nvm: node-version manager
 # https://github.com/creationix/nvm
 sudo apt-get install -y git-core
@@ -41,3 +45,5 @@ ln -sb dotfiles/.bashrc .
 ln -sb dotfiles/.bashrc_custom .
 ln -sf dotfiles/.emacs.d .
 
+# install Heroku
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
