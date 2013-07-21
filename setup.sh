@@ -15,6 +15,7 @@ curl https://raw.github.com/creationix/nvm/master/install.sh | sh
 source $HOME/.nvm/nvm.sh
 nvm install v0.10.12
 nvm use v0.10.12
+npm install #install for running node web.js properly
 
 # Install jshint to allow checking of JS code within emacs
 # http://jshint.com/
